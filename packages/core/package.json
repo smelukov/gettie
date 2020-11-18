@@ -13,8 +13,7 @@
   "scripts": {
     "build": "webpack",
     "build:prod": "NODE_ENV=production npm run build",
-    "watch": "webpack --watch",
-    "prepublish": "npm run test && npm run build:prod"
+    "watch": "webpack --watch"
   },
   "license": "MIT",
   "repository": {

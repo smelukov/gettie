@@ -3,7 +3,7 @@
   "private": true,
   "description": "JS Object props coverage",
   "scripts": {
-    "bootstrap": "lerna init",
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "build:prod": "lerna run build:prod",
     "fix": "npm run lint -- --fix",
@@ -13,8 +13,8 @@
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
     "test:watch": "npm run test:jest -- --watch",
-    "prepublish": "lerna run prepublish",
-    "postinstall": "npm run bootstrap"
+    "postinstall": "npm run bootstrap",
+    "prepublish": "npm run test && npm run build:prod"
   },
   "license": "MIT",
   "repository": {
