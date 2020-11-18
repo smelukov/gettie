@@ -1,0 +1,32 @@
+{
+  "name": "@gettie/core",
+  "version": "1.0.0",
+  "description": "JS object props coverage",
+  "main": "dist/main.js",
+  "types": "types.d.ts",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "types.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "NODE_ENV=production npm run build",
+    "watch": "webpack --watch",
+    "prepublish": "npm run test && npm run build:prod"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smelukov/gettie"
+  },
+  "author": {
+    "name": "Serget Melyukov",
+    "url": "https://twitter.com/smelukov"
+  },
+  "bugs": {
+    "url": "https://github.com/smelukov/gettie/issues"
+  },
+  "homepage": "https://github.com/smelukov/gettie"
+}

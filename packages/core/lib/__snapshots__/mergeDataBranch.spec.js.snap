@@ -1,0 +1,568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merge branches array 1`] = `
+Array [
+  Object {},
+]
+`;
+
+exports[`merge branches array 2`] = `
+Array [
+  Object {
+    "a": 123,
+  },
+]
+`;
+
+exports[`merge branches array 3`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {},
+  },
+]
+`;
+
+exports[`merge branches array 4`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {},
+    },
+  },
+]
+`;
+
+exports[`merge branches array 5`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+  },
+]
+`;
+
+exports[`merge branches array 6`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [],
+  },
+]
+`;
+
+exports[`merge branches array 7`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+    ],
+  },
+]
+`;
+
+exports[`merge branches array 8`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+      Object {},
+    ],
+  },
+]
+`;
+
+exports[`merge branches array 9`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+      Object {
+        "foo": 2,
+      },
+    ],
+  },
+]
+`;
+
+exports[`merge branches array 10`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+      Object {
+        "foo": 2,
+      },
+      Array [],
+    ],
+  },
+]
+`;
+
+exports[`merge branches array 11`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+      Object {
+        "foo": 2,
+      },
+      Array [
+        3,
+      ],
+    ],
+  },
+]
+`;
+
+exports[`merge branches array 12`] = `
+Array [
+  Object {
+    "a": 123,
+    "b": Object {
+      "c": Object {
+        "d": 123,
+      },
+    },
+    "c": Array [
+      1,
+      Object {
+        "foo": 2,
+      },
+      Array [
+        3,
+        4,
+      ],
+    ],
+  },
+]
+`;
+
+exports[`merge branches ignoring 1`] = `
+Object {
+  "a": 123,
+}
+`;
+
+exports[`merge branches ignoring 2`] = `
+Object {
+  "a": 123,
+  "b": Object {},
+}
+`;
+
+exports[`merge branches ignoring 3`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+}
+`;
+
+exports[`merge branches ignoring 4`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+}
+`;
+
+exports[`merge branches ignoring 5`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [],
+}
+`;
+
+exports[`merge branches ignoring 6`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+  ],
+}
+`;
+
+exports[`merge branches ignoring 7`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {},
+  ],
+}
+`;
+
+exports[`merge branches ignoring 8`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+  ],
+}
+`;
+
+exports[`merge branches ignoring 9`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [],
+  ],
+}
+`;
+
+exports[`merge branches ignoring 10`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [
+      3,
+    ],
+  ],
+}
+`;
+
+exports[`merge branches ignoring 11`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [
+      3,
+      4,
+    ],
+  ],
+}
+`;
+
+exports[`merge branches ignoring 12`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [
+      3,
+      4,
+    ],
+  ],
+  "foo": Object {},
+}
+`;
+
+exports[`merge branches object 1`] = `
+Object {
+  "a": 123,
+}
+`;
+
+exports[`merge branches object 2`] = `
+Object {
+  "a": 123,
+  "b": Object {},
+}
+`;
+
+exports[`merge branches object 3`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+}
+`;
+
+exports[`merge branches object 4`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+}
+`;
+
+exports[`merge branches object 5`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [],
+}
+`;
+
+exports[`merge branches object 6`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+  ],
+}
+`;
+
+exports[`merge branches object 7`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {},
+  ],
+}
+`;
+
+exports[`merge branches object 8`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+  ],
+}
+`;
+
+exports[`merge branches object 9`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [],
+  ],
+}
+`;
+
+exports[`merge branches object 10`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [
+      3,
+    ],
+  ],
+}
+`;
+
+exports[`merge branches object 11`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {
+      "d": 123,
+    },
+  },
+  "c": Array [
+    1,
+    Object {
+      "foo": 2,
+    },
+    Array [
+      3,
+      4,
+    ],
+  ],
+}
+`;
+
+exports[`merge branches path with ignoring 1`] = `Object {}`;
+
+exports[`merge branches path with nullish part 1`] = `
+Object {
+  "foo": Object {
+    "bar": null,
+  },
+}
+`;
+
+exports[`merge branches recursive 1`] = `
+Object {
+  "a": 123,
+}
+`;
+
+exports[`merge branches recursive 2`] = `
+Object {
+  "a": 123,
+  "b": Object {},
+}
+`;
+
+exports[`merge branches recursive 3`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+}
+`;
+
+exports[`merge branches recursive 4`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+  "c": Array [],
+}
+`;
+
+exports[`merge branches recursive 5`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+  "c": Array [
+    0,
+  ],
+}
+`;
+
+exports[`merge branches recursive 6`] = `
+Object {
+  "a": 123,
+  "b": Object {
+    "c": Object {},
+  },
+  "c": Array [
+    0,
+    Object {},
+  ],
+}
+`;

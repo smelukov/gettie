@@ -1,0 +1,829 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gettie coverage just coverage 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+    ],
+    "used": Array [
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        "1",
+      ],
+      Array [
+        "bar",
+        "1",
+        "quux",
+      ],
+      Array [
+        "bar",
+        "0",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": Array [
+        undefined,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+        },
+      ],
+      "foo": 123,
+    },
+    "used": Object {
+      "bar": Array [
+        123,
+        Object {
+          "quux": 4,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`gettie coverage nullish prop 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+    ],
+    "used": Array [
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        "1",
+      ],
+      Array [
+        "bar",
+        "1",
+        "quux",
+      ],
+      Array [
+        "bar",
+        "0",
+      ],
+      Array [
+        "not_defined",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": null,
+      "foo": 123,
+    },
+    "unused": Object {
+      "foo": 123,
+    },
+    "used": Object {
+      "bar": null,
+    },
+  },
+}
+`;
+
+exports[`gettie ignoring object 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+    ],
+    "used": Array [
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        "0",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+          Symbol(gettie-ignore): true,
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "foo": 123,
+    },
+    "used": Object {
+      "bar": Array [
+        123,
+      ],
+    },
+  },
+}
+`;
+
+exports[`gettie ignoring prop 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+    ],
+    "used": Array [
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        "1",
+      ],
+      Array [
+        "bar",
+        "1",
+        "baz",
+      ],
+      Array [
+        "bar",
+        "0",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+          Symbol(gettie-ignore): Array [
+            "quux",
+          ],
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": Array [
+        undefined,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+        },
+      ],
+      "foo": 123,
+    },
+    "used": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`gettie ignoring symbols 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+    ],
+    "unused": Array [],
+    "used": Array [
+      Array [
+        "foo",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "foo": 123,
+      Symbol(foo): Object {
+        "foo": 123,
+      },
+    },
+    "unused": Object {},
+    "used": Object {
+      "foo": 123,
+    },
+  },
+}
+`;
+
+exports[`gettie reset 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "used": Array [],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "used": Object {},
+  },
+}
+`;
+
+exports[`gettie reset 2`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "used": Array [],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "used": Object {},
+  },
+}
+`;
+
+exports[`gettie should be wrapped/unwrapped 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "bar",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        0,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        1,
+      ],
+      Array [
+        "bar",
+        1,
+        "baz",
+        2,
+      ],
+      Array [
+        "bar",
+        1,
+        "quux",
+      ],
+    ],
+    "used": Array [],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": Array [
+        123,
+        Object {
+          "baz": Array [
+            1,
+            2,
+            3,
+          ],
+          "quux": 4,
+        },
+      ],
+      "foo": 123,
+    },
+    "used": Object {},
+  },
+}
+`;
+
+exports[`gettie wrap fn 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "baz",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+    ],
+    "used": Array [
+      Array [
+        "baz",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": 456,
+      "baz": 789,
+      "foo": 123,
+    },
+    "unused": Object {
+      "bar": 456,
+      "foo": 123,
+    },
+    "used": Object {
+      "baz": 789,
+    },
+  },
+}
+`;

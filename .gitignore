@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+node_modules/
+coverage/
+*.log
+*.lock
+.DS_store
+.eslintcache
+dist

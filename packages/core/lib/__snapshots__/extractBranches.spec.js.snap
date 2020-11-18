@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extract branches array 1`] = `
+Array [
+  Array [
+    0,
+  ],
+  Array [
+    0,
+    "a",
+  ],
+  Array [
+    0,
+    "b",
+  ],
+  Array [
+    0,
+    "b",
+    "c",
+  ],
+  Array [
+    0,
+    "b",
+    "c",
+    "d",
+  ],
+  Array [
+    0,
+    "c",
+  ],
+  Array [
+    0,
+    "c",
+    0,
+  ],
+  Array [
+    0,
+    "c",
+    1,
+  ],
+  Array [
+    0,
+    "c",
+    1,
+    "foo",
+  ],
+  Array [
+    0,
+    "c",
+    2,
+  ],
+  Array [
+    0,
+    "c",
+    2,
+    0,
+  ],
+  Array [
+    0,
+    "c",
+    2,
+    1,
+  ],
+]
+`;
+
+exports[`extract branches object 1`] = `
+Array [
+  Array [
+    "a",
+  ],
+  Array [
+    "b",
+  ],
+  Array [
+    "b",
+    "c",
+  ],
+  Array [
+    "b",
+    "c",
+    "d",
+  ],
+  Array [
+    "c",
+  ],
+  Array [
+    "c",
+    0,
+  ],
+  Array [
+    "c",
+    1,
+  ],
+  Array [
+    "c",
+    1,
+    "foo",
+  ],
+  Array [
+    "c",
+    2,
+  ],
+  Array [
+    "c",
+    2,
+    0,
+  ],
+  Array [
+    "c",
+    2,
+    1,
+  ],
+]
+`;
+
+exports[`extract branches recursive 1`] = `
+Array [
+  Array [
+    "a",
+  ],
+  Array [
+    "b",
+  ],
+  Array [
+    "b",
+    "c",
+  ],
+  Array [
+    "c",
+  ],
+  Array [
+    "c",
+    0,
+  ],
+  Array [
+    "c",
+    1,
+  ],
+]
+`;
