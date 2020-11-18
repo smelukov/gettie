@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40gettie%2Fcore.svg)](https://badge.fury.io/js/%40gettie%2Fcore)
 
-Core package for [Gettie](/smelukov/gettie).
+Core package for [Gettie](https://github.com/smelukov/gettie).
 
 ## Installation
 
@@ -75,7 +75,7 @@ Gettie creates a [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 This proxy intercept any access to a property and mark path to it as used
 
-Шf the property's value is an object or array, then it will be wrapped by another proxy, and so on. 
+If the property's value is an object or array, then it will be wrapped by another proxy, and so on. 
 
 > To collect usage stats, all accessing the properties of the original object should be performed through this proxy
 
