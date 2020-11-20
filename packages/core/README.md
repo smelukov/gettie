@@ -267,7 +267,7 @@ console.log(gettie.coverage().branches.usage); // [['foo'], ['bar']]
 
 Return `true` if the instance is locked.
 
-### wrapFn(fn: (...args) => R): (...args) => R
+### wrapFn(fn: (...args) => R, lock: bool = true): (...args) => R
 
 Create a function that will update the instance by `fn`-returned value.
 
@@ -277,6 +277,10 @@ const gettie = new Gettie();
 const gettieReducer = gettie.wrapFn((state, action) => reducer(state, action));
 const store = createStore(gettieReducer, { foo: 123, bar: 456 });
 ```
+
+The instance will be locked before calling fn and unlocked after it.
+
+Pass `false` to `lock` to prevent lock.
 
 ### Gettie.ignoreSymbol
 
@@ -317,3 +321,13 @@ console.log(gettie.coverage()); // [['foo']]
 ```
 
 `bar` and `baz` will not be marked as `used` because these are marked as ignored.
+
+## Ok, Ok! What should I do to figure out which data in my redux store unused?
+
+See [this example](https://codesandbox.io/s/unused-redux-state-viewer-sxvex).
+
+This is a little bit modified classic todo-list application.
+
+Every todo has `createdTS` and `editedTS` fields that are not used.
+
+Add or edit some todos and click to the `Refresh` link to see unused branches and data.
