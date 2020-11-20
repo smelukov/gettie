@@ -52,17 +52,32 @@ describe('gettie', () => {
     expect(gettie.coverage()).toMatchSnapshot();
   });
 
-  it('wrap fn', () => {
-    const gettie = new Gettie();
-    const reducer = (state, action) => {
-      return { ...state, ...action.payload };
-    };
-    const newReducer = gettie.wrapFn(reducer);
-    const state = newReducer({ foo: 123, bar: 456 }, { payload: { baz: 789 } });
+  describe('wrap fn', () => {
+    it('with lock', () => {
+      const gettie = new Gettie();
+      const reducer = (state, action) => {
+        return { ...state, ...action.payload };
+      };
+      const newReducer = gettie.wrapFn(reducer);
+      const state = newReducer({ foo: 123, bar: 456 }, { payload: { baz: 789 } });
+      state.baz;
+      newReducer(state, { payload: { quux: 789 } });
 
-    state.baz;
+      expect(gettie.coverage()).toMatchSnapshot();
+    });
 
-    expect(gettie.coverage()).toMatchSnapshot();
+    it('without lock', () => {
+      const gettie = new Gettie();
+      const reducer = (state, action) => {
+        return { ...state, ...action.payload };
+      };
+      const newReducer = gettie.wrapFn(reducer, false);
+      const state = newReducer({ foo: 123, bar: 456 }, { payload: { baz: 789 } });
+      state.baz;
+      newReducer(state, { payload: { quux: 789 } });
+
+      expect(gettie.coverage()).toMatchSnapshot();
+    });
   });
 
   describe('ignoring', () => {

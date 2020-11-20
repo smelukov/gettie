@@ -783,7 +783,7 @@ Object {
 }
 `;
 
-exports[`gettie wrap fn 1`] = `
+exports[`gettie wrap fn with lock 1`] = `
 Object {
   "branches": Object {
     "all": Array [
@@ -796,6 +796,9 @@ Object {
       Array [
         "baz",
       ],
+      Array [
+        "quux",
+      ],
     ],
     "unused": Array [
       Array [
@@ -803,6 +806,9 @@ Object {
       ],
       Array [
         "bar",
+      ],
+      Array [
+        "quux",
       ],
     ],
     "used": Array [
@@ -816,13 +822,68 @@ Object {
       "bar": 456,
       "baz": 789,
       "foo": 123,
+      "quux": 789,
     },
     "unused": Object {
       "bar": 456,
       "foo": 123,
+      "quux": 789,
     },
     "used": Object {
       "baz": 789,
+    },
+  },
+}
+`;
+
+exports[`gettie wrap fn without lock 1`] = `
+Object {
+  "branches": Object {
+    "all": Array [
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+      Array [
+        "baz",
+      ],
+      Array [
+        "quux",
+      ],
+    ],
+    "unused": Array [
+      Array [
+        "quux",
+      ],
+    ],
+    "used": Array [
+      Array [
+        "baz",
+      ],
+      Array [
+        "foo",
+      ],
+      Array [
+        "bar",
+      ],
+    ],
+  },
+  "data": Object {
+    "all": Object {
+      "bar": 456,
+      "baz": 789,
+      "foo": 123,
+      "quux": 789,
+    },
+    "unused": Object {
+      "quux": 789,
+    },
+    "used": Object {
+      "bar": 456,
+      "baz": 789,
+      "foo": 123,
     },
   },
 }

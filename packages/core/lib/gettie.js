@@ -16,9 +16,15 @@ export default class Gettie {
     this.reset(data);
   }
 
-  wrapFn(fn) {
+  wrapFn(fn, lock = true) {
     return (...args) => {
+      if (lock) {
+        this.lock();
+      }
       let data = fn(...args);
+      if (lock) {
+        this.unlock();
+      }
       data = this.update(data);
       return data;
     };
