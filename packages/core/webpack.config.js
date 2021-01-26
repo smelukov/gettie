@@ -2,13 +2,20 @@
 
 const path = require('path');
 
-function generate(options) {
+function generate(options = {}) {
+  const mode =
+    options.mode ||
+    (process.env.NODE_ENV === 'production' ? 'production' : 'development');
+  const output = options.output || {};
+
   return {
-    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-    devtool: process.env.NODE_ENV === 'production' ? false : 'source-map',
+    mode,
+    target: 'browserslist',
+    devtool: mode === 'production' ? false : 'source-map',
     entry: './lib/index.js',
     output: {
-      path: path.resolve(options.output.path),
+      path: path.resolve(output.path || 'dist'),
+      filename: output.filename || '[name].js',
       library: 'Gettie',
       libraryTarget: 'umd',
       globalObject: 'this',
@@ -31,10 +38,11 @@ function generate(options) {
 }
 
 module.exports = [
+  generate(),
   generate({
+    mode: 'development',
     output: {
-      path: 'dist',
+      filename: '[name].dev.js',
     },
-    useBabel: true,
   }),
 ];
