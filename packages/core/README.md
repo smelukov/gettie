@@ -184,7 +184,7 @@ wrapped = gettie.update({ baz: 123, quux: 456 });
 console.log(wrapped.baz);
 console.log(wrapped.quux);
 
-console.log(gettie.coverage().branches.usage); // [['foo'], ['bar'], ['baz'], ['quux']]
+console.log(gettie.coverage().branches.used); // [['foo'], ['bar'], ['baz'], ['quux']]
 ```  
 
 ### get(): Proxy
